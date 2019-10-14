@@ -7,16 +7,14 @@ import org.junit.Test;
 public class GenericsTest {
 
   private Generics generics;
-  
-  @Before
-  public void setUp(){
-    generics = new Generics();
-  }
 
   @Test
-  public void testSimpleGeneric(){
+  public void testSimpleGeneric() {
+    generics = new Generics();
+
     String values = generics.getValues();
-    Assert.assertEquals("Oma Opa Baby",values);
+
+    Assert.assertEquals("Oma Opa Baby", values);
   }
 
 }
