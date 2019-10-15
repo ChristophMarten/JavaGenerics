@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>de.generics.strategy.pattern</OriginalElement>
+  <nodes>
+    <node x="976.5000000000001" y="99.0">de.generics.strategy.pattern.entity.PlasticChips</node>
+    <node x="910.0" y="198.0">de.generics.strategy.pattern.entity.Customer</node>
+    <node x="71.875" y="198.0">de.generics.strategy.pattern.entity.strategy.DebitCardPaymentStrategy</node>
+    <node x="1064.0" y="209.0">de.generics.strategy.pattern.exceptions</node>
+    <node x="513.25" y="99.0">de.generics.strategy.pattern.entity.Cash</node>
+    <node x="489.125" y="0.0">de.generics.strategy.pattern.entity.Credit</node>
+    <node x="10.5" y="99.0">de.generics.strategy.pattern.entity.DebitCard</node>
+    <node x="350.5625" y="198.0">de.generics.strategy.pattern.entity.strategy.CashPaymentStrategy</node>
+    <node x="620.375" y="198.0">de.generics.strategy.pattern.entity.strategy.CreditCardPaymentStrategy</node>
+    <node x="781.5" y="99.0">de.generics.strategy.pattern.entity.CreditCard</node>
+    <node x="283.9375000000001" y="99.0">de.generics.strategy.pattern.entity.strategy.PaymentStrategy</node>
+    <node x="341.37152777777777" y="327.0">de.generics.strategy.pattern.PaymentProcess</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="de.generics.strategy.pattern.entity.strategy.CashPaymentStrategy" target="de.generics.strategy.pattern.entity.strategy.PaymentStrategy">
+      <point x="-56.0" y="-24.5" />
+      <point x="406.5625" y="178.0" />
+      <point x="412.0625000000001" y="178.0" />
+      <point x="25.625" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.PaymentProcess" target="de.generics.strategy.pattern.entity.strategy.DebitCardPaymentStrategy">
+      <point x="-78.5" y="-35.5" />
+      <point x="419.87152777777777" y="287.0" />
+      <point x="197.375" y="287.0" />
+      <point x="0.0" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.entity.strategy.CashPaymentStrategy" target="de.generics.strategy.pattern.entity.Cash">
+      <point x="56.0" y="-24.5" />
+      <point x="518.5625" y="178.0" />
+      <point x="557.0" y="178.0" />
+      <point x="-43.75" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.PaymentProcess" target="de.generics.strategy.pattern.entity.strategy.PaymentStrategy">
+      <point x="-47.09999999999991" y="-35.5" />
+      <point x="451.27152777777786" y="277.0" />
+      <point x="333.375" y="277.0" />
+      <point x="333.375" y="178.0" />
+      <point x="360.8125000000001" y="178.0" />
+      <point x="-25.625" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.PaymentProcess" target="de.generics.strategy.pattern.entity.DebitCard">
+      <point x="-109.89999999999986" y="-35.5" />
+      <point x="388.4715277777779" y="297.0" />
+      <point x="61.375" y="297.0" />
+      <point x="61.375" y="178.0" />
+      <point x="54.25" y="178.0" />
+      <point x="-43.75" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.entity.strategy.CreditCardPaymentStrategy" target="de.generics.strategy.pattern.entity.strategy.PaymentStrategy">
+      <point x="-63.75" y="-24.5" />
+      <point x="684.125" y="168.0" />
+      <point x="463.3125000000001" y="168.0" />
+      <point x="76.875" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.entity.CreditCard" target="de.generics.strategy.pattern.entity.Credit">
+      <point x="0.0" y="-24.5" />
+      <point x="869.0" y="79.0" />
+      <point x="611.625" y="79.0" />
+      <point x="35.0" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.PaymentProcess" target="de.generics.strategy.pattern.entity.strategy.CashPaymentStrategy">
+      <point x="-15.700000000000045" y="-35.5" />
+      <point x="482.6715277777777" y="307.0" />
+      <point x="462.5625" y="307.0" />
+      <point x="0.0" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.PaymentProcess" target="de.generics.strategy.pattern.entity.Customer">
+      <point x="109.89999999999998" y="-35.5" />
+      <point x="608.2715277777777" y="297.0" />
+      <point x="977.0" y="297.0" />
+      <point x="0.0" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.PaymentProcess" target="de.generics.strategy.pattern.entity.CreditCard">
+      <point x="78.5" y="-35.5" />
+      <point x="576.8715277777778" y="287.0" />
+      <point x="899.5" y="287.0" />
+      <point x="899.5" y="178.0" />
+      <point x="912.75" y="178.0" />
+      <point x="43.75" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.PaymentProcess" target="de.generics.strategy.pattern.entity.strategy.CreditCardPaymentStrategy">
+      <point x="47.10000000000002" y="-35.5" />
+      <point x="545.4715277777777" y="277.0" />
+      <point x="747.875" y="277.0" />
+      <point x="0.0" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.PaymentProcess" target="de.generics.strategy.pattern.entity.Credit">
+      <point x="-141.29999999999995" y="-35.5" />
+      <point x="357.0715277777778" y="307.0" />
+      <point x="0.0" y="307.0" />
+      <point x="0.0" y="69.0" />
+      <point x="506.625" y="69.0" />
+      <point x="-70.0" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.entity.Cash" target="de.generics.strategy.pattern.entity.Credit">
+      <point x="0.0" y="-24.5" />
+      <point x="600.75" y="79.0" />
+      <point x="576.625" y="79.0" />
+      <point x="0.0" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.PaymentProcess" target="de.generics.strategy.pattern.exceptions">
+      <point x="141.29999999999995" y="-35.5" />
+      <point x="639.6715277777778" y="307.0" />
+      <point x="1141.0" y="307.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.entity.strategy.CreditCardPaymentStrategy" target="de.generics.strategy.pattern.entity.CreditCard">
+      <point x="63.75" y="-24.5" />
+      <point x="811.625" y="178.0" />
+      <point x="825.25" y="178.0" />
+      <point x="-43.75" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.entity.strategy.DebitCardPaymentStrategy" target="de.generics.strategy.pattern.entity.DebitCard">
+      <point x="-62.74999999999994" y="-24.5" />
+      <point x="134.62500000000006" y="178.0" />
+      <point x="141.75" y="178.0" />
+      <point x="43.75" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.entity.PlasticChips" target="de.generics.strategy.pattern.entity.Credit">
+      <point x="0.0" y="-24.5" />
+      <point x="1064.0" y="69.0" />
+      <point x="646.625" y="69.0" />
+      <point x="70.0" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.entity.strategy.DebitCardPaymentStrategy" target="de.generics.strategy.pattern.entity.strategy.PaymentStrategy">
+      <point x="62.75000000000006" y="-24.5" />
+      <point x="260.12500000000006" y="178.0" />
+      <point x="309.5625000000001" y="178.0" />
+      <point x="-76.875" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.PaymentProcess" target="de.generics.strategy.pattern.entity.Cash">
+      <point x="15.700000000000045" y="-35.5" />
+      <point x="514.0715277777779" y="267.0" />
+      <point x="609.875" y="267.0" />
+      <point x="609.875" y="178.0" />
+      <point x="644.5" y="178.0" />
+      <point x="43.75" y="24.5" />
+    </edge>
+    <edge source="de.generics.strategy.pattern.entity.DebitCard" target="de.generics.strategy.pattern.entity.Credit">
+      <point x="0.0" y="-24.5" />
+      <point x="98.0" y="79.0" />
+      <point x="541.625" y="79.0" />
+      <point x="-35.0" y="24.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="635.25" y="238.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
