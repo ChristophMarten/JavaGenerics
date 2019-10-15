@@ -17,7 +17,7 @@ public class UnlimitedParameterPolymorphTest {
   public void testAddDoubleValue() {
     unlimitedParameterPolymorph.addDoubleValue(2D);
 
-    Assert.assertEquals(true, unlimitedParameterPolymorph.getList().contains(2D));
+    Assert.assertTrue(unlimitedParameterPolymorph.getList().contains(2D));
   }
 
   @Test
@@ -25,6 +25,6 @@ public class UnlimitedParameterPolymorphTest {
 
     unlimitedParameterPolymorph.addNumberValue(2L);
 
-    Assert.assertEquals(true, unlimitedParameterPolymorph.getList().contains(2L));
+    Assert.assertTrue(unlimitedParameterPolymorph.getList().contains(2L));
   }
 }

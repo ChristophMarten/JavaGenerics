@@ -1,28 +1,28 @@
 package de.generics;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
 public class GenericBoxTest {
 
-   private GenericBox genericBox;
+  private GenericBox genericBox;
 
-   @Test
-  public void testCreateIntegerBox(){
+  @Test
+  public void testCreateIntegerBox() {
 
     genericBox = new GenericBox();
     genericBox.set(123);
 
-    assertEquals(true, genericBox.get() instanceof Integer);
+    assertTrue(genericBox.get() instanceof Integer);
   }
 
   @Test
-  public void testCreateStringBox(){
+  public void testCreateStringBox() {
     genericBox = new GenericBox();
     genericBox.set("TestString");
 
-    assertEquals(true, genericBox.get() instanceof String);
+    assertTrue(genericBox.get() instanceof String);
   }
 
 }

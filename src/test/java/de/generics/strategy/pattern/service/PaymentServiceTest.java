@@ -1,4 +1,4 @@
-package de.generics.strategy.pattern;
+package de.generics.strategy.pattern.service;
 
 import de.generics.strategy.pattern.entity.Cash;
 import de.generics.strategy.pattern.entity.CreditCard;
@@ -12,13 +12,13 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class PaymentProcessTest {
+public class PaymentServiceTest {
 
-  private PaymentProcess paymentProcess;
+  private PaymentService paymentProcess;
 
   @Before
   public void setUp() {
-    paymentProcess = new PaymentProcess();
+    paymentProcess = new PaymentService();
   }
 
   @Test
@@ -29,7 +29,7 @@ public class PaymentProcessTest {
 
     boolean isPayed = paymentProcess.doPayment(peter, cash, billAmount);
 
-    Assert.assertEquals(true, isPayed);
+    Assert.assertTrue(isPayed);
   }
 
   @Test
@@ -40,7 +40,7 @@ public class PaymentProcessTest {
 
     boolean isPayed = paymentProcess.doPayment(peter, creditCard, billAmount);
 
-    Assert.assertEquals(true, isPayed);
+    Assert.assertTrue(isPayed);
   }
 
   @Test
@@ -51,7 +51,7 @@ public class PaymentProcessTest {
 
     boolean isPayed = paymentProcess.doPayment(peter, debitCard, billAmount);
 
-    Assert.assertEquals(true, isPayed);
+    Assert.assertTrue(isPayed);
   }
 
   @Test(expected = PaymentException.class)
@@ -71,5 +71,4 @@ public class PaymentProcessTest {
 
     paymentProcess.doPayment(peter, plasticChips, billAmount);
   }
-
 }

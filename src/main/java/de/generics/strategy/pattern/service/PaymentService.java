@@ -1,4 +1,4 @@
-package de.generics.strategy.pattern;
+package de.generics.strategy.pattern.service;
 
 import de.generics.strategy.pattern.entity.Cash;
 import de.generics.strategy.pattern.entity.Credit;
@@ -13,7 +13,7 @@ import de.generics.strategy.pattern.exceptions.PaymentException;
 import de.generics.strategy.pattern.exceptions.UnsupportedCreditType;
 import java.math.BigDecimal;
 
-public class PaymentProcess {
+public class PaymentService {
 
   private PaymentStrategy paymentStrategy;
 
@@ -24,14 +24,9 @@ public class PaymentProcess {
 
     if (!paymentStrategy.payBill(credit, amount)) {
 
-      StringBuilder errorMessage = new StringBuilder();
-      errorMessage.append(customer.getName()).append(" can't pay");
-
-      throw new PaymentException(errorMessage.toString());
+      throw new PaymentException(customer.getName() + " can't pay");
     }
-
     return true;
-
   }
 
   private void choosePaymentStrategy(Credit credit) throws UnsupportedCreditType {

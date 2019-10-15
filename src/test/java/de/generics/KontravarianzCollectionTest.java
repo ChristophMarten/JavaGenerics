@@ -17,7 +17,7 @@ public class KontravarianzCollectionTest {
   public void testAddDoubleValue() {
     kontravarianzCollection.addDoubleValue(2D);
 
-    Assert.assertEquals(true, kontravarianzCollection.getList().contains(2D));
+    Assert.assertTrue(kontravarianzCollection.getList().contains(2D));
   }
 
   @Test
@@ -26,8 +26,8 @@ public class KontravarianzCollectionTest {
 
     boolean isInteger = kontravarianzCollection.getList().get(0) instanceof Integer;
 
-    Assert.assertEquals(true, kontravarianzCollection.getList().contains(2));
-    Assert.assertEquals(true, isInteger);
+    Assert.assertTrue(kontravarianzCollection.getList().contains(2));
+    Assert.assertTrue(isInteger);
   }
 
   // List<? super Double> list -> kein Fehler, da eine (List<Number>) list hinzugefügt wird, in die dann ein Long Wert geschrieben wird.
@@ -35,6 +35,6 @@ public class KontravarianzCollectionTest {
   public void testAddLongValue() {
     kontravarianzCollection.addLongValue(2L);
 
-    Assert.assertEquals(true, kontravarianzCollection.getList().contains(2L));
+    Assert.assertTrue(kontravarianzCollection.getList().contains(2L));
   }
 }

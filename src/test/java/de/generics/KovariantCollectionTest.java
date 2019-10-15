@@ -9,35 +9,35 @@ public class KovariantCollectionTest {
   private KovariantCollection kovariantCollection;
 
   @Before
-  public void setUp(){
+  public void setUp() {
     kovariantCollection = new KovariantCollection();
   }
 
   @Test
-  public void testDouble(){
+  public void testDouble() {
     kovariantCollection.addDoubleValue(2D);
 
-    Assert.assertEquals(true, kovariantCollection.getList().contains(2D));
+    Assert.assertTrue(kovariantCollection.getList().contains(2D));
   }
 
   @Test
-  public void testLong(){
+  public void testLong() {
     kovariantCollection.addLongValue(2L);
 
-    Assert.assertEquals(true, kovariantCollection.getList().contains(2L));
+    Assert.assertTrue(kovariantCollection.getList().contains(2L));
   }
 
   @Test(expected = ClassCastException.class)
   public void testIntegerCastError() {
     kovariantCollection.addIntegerValue("2");
 
-    Assert.assertEquals(true, kovariantCollection.getList().contains(2));
+    Assert.assertTrue(kovariantCollection.getList().contains(2));
   }
 
   @Test
-  public void testInteger(){
+  public void testInteger() {
     kovariantCollection.addIntegerValue(2);
 
-    Assert.assertEquals(true, kovariantCollection.getList().contains(2));
+    Assert.assertTrue(kovariantCollection.getList().contains(2));
   }
 }

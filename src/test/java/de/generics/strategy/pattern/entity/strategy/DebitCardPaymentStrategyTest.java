@@ -22,6 +22,6 @@ public class DebitCardPaymentStrategyTest {
 
     boolean canPay = debitCardPaymentStrategy.payBill(debitCard, new BigDecimal(1000));
 
-    Assert.assertEquals(true, canPay);
+    Assert.assertTrue(canPay);
   }
 }
