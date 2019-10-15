@@ -1,10 +1,10 @@
 # Generics <T>
 
 # Inhaltsverzeichnis #
-[1. Naming Convention ](#1-Naming Convention)<br/>
-[2. Generics, Inheritance and Subtypes ](#2-Generics Inheritance and Subtypes)<br/>
-[3. Wildcards and Subtyping](#3-Wildcards and Subtyping)<br/>
-[4. Strategy Pattern](#4-Strategy Pattern)<br/>
+[1. Naming Convention ](#1-naming-convention)<br/>
+[2. Generics, Inheritance and Subtypes ](#2-generics-inheritance-and-subtypes)<br/>
+[3. Wildcards and Subtyping](#3-wildcards-and-subtyping)<br/>
+[4. Strategy Pattern](#4-strategy-pattern)<br/>
 
 
 # 1. Naming Convention #
@@ -22,10 +22,10 @@ The most commonly used type parameter names are:
 
 
 # 2. Generics, Inheritance, and Subtypes #
-![Inheritance](Pictures/Generics1.png)
+![Inheritance](Pictures/Generics1.PNG)
   
 # 3. Wildcards and Subtyping #
-![Wild](Pictures/Generics2.png)
+![Wild](Pictures/Generics2.PNG)
 
 # 4. Strategy Pattern UML#
-![Strategy](Pictures/StrategyPattern.png)
+![Strategy](Pictures/StrategyPattern.PNG)
