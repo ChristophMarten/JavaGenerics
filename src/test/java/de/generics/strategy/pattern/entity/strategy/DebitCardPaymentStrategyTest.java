@@ -1,7 +1,6 @@
-package de.generics.strategy.pattern;
+package de.generics.strategy.pattern.entity.strategy;
 
 import de.generics.strategy.pattern.entity.DebitCard;
-import de.generics.strategy.pattern.entity.strategy.DebitCardPaymentStrategy;
 import java.math.BigDecimal;
 import org.junit.Assert;
 import org.junit.Before;
