@@ -27,5 +27,5 @@ The most commonly used type parameter names are:
 # 3. Wildcards and Subtyping #
 ![Wild](Pictures/Generics2.PNG)
 
-# 4. Strategy Pattern UML#
+# 4. Strategy Pattern UML #
 ![Strategy](Pictures/StrategyPattern.PNG)
