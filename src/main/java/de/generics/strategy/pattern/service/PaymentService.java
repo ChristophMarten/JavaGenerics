@@ -17,6 +17,7 @@ public class PaymentService {
 
   private PaymentStrategy paymentStrategy;
 
+  @SuppressWarnings("unchecked")
   public boolean doPayment(Customer customer, Credit credit, BigDecimal amount)
       throws PaymentException, UnsupportedCreditType {
 
